@@ -1,0 +1,13 @@
+Specify files and directories to be ignored by git.
+
+__pycahce__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.csv
+*.xlsx
+*.xlsm
+data/
+.env
+.DS_Store

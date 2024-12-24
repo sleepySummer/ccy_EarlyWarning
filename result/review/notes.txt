@@ -1,0 +1,1 @@
+FXDaily_Transaction_yymmdd.xls ---> review.py --> transact_.csv 

@@ -1,0 +1,23 @@
+C:\Users\Ichi\Desktop\quick_py\TTL_api\result\review
+
+FXDaily_Transaction_yymmdd.xls ---> review.py --> transact_.csv 
+
+------------------------------------------------------------------------------
+
+C:\Users\Ichi\Desktop\quick_py\TTL_api\result\predictive
+
+analysis_result.xlsx, pivot_exchanged_.csv
+
+------------------------------------------------------------------------------
+
+C:\Users\Ichi\Desktop\quick_py\TTL_api\manual_analysis
+
+manual paste "cleaned FXDaily_Trans_xxx" ---> exchange_break
+
+pivot_exchange_.csv + analysis_result.xlsx  ---> flow_predict.xlsm
+
+pivot_exchange_.csv + transact_.csv   	    ---> review_acc.xlsm
+
+manual input on review_acc.xlsm
+1. column W, find out the a/c correspond to zero in column W whelter cancelccy in CMS
+2. add back those a/c in "cancelccy_list.csv" by note++

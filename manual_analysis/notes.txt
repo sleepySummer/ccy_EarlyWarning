@@ -1,0 +1,16 @@
+manual paste "cleaned FXDaily_Trans_xxx" ---> exchange_break
+
+pivot_exchange_.csv + analysis_result.xlsx  ---> flow_predict.xlsm
+
+pivot_exchange_.csv + transact_.csv   	    ---> review_acc.xlsm
+
+
+##################################
+
+review_acc.xlsm
+1. column W, find out the a/c correspond to zero in column W whelter cancelccy in CMS
+
+2. add back those a/c in "cancelccy_list.csv" by note++
+
+
+
