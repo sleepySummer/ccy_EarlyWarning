@@ -11,3 +11,4 @@ __pycahce__/
 data/
 .env
 .DS_Store
+directory.py

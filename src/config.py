@@ -4,6 +4,7 @@ import pandas as pd
 import time
 import calendar
 from datetime import date
+import directory as dir_string
 
 
 # Paths
@@ -15,8 +16,8 @@ def BAL_PATH(x,y):
     return path
 
 
-source_folder =  "//fsn1/Company Share/FUT_FX/FX/Conversion/Early-warning/temp/"
-destin_folder = "//fsn1/Company Share/FUT_FX/FX/Conversion/Early-warning/cleaned/"
+source_folder =  dir_string.import_dir + "temp/"
+destin_folder = dir_string.import_dir + "cleaned/"
 target_file_name = 'client_bal.csv'
 cleaned_file_name = "Client_balance_" +  str(date.today()).replace("-", "") +".csv"
 auto_source_path = os.path.join(source_folder, target_file_name)
@@ -25,10 +26,10 @@ auto_destin_path = os.path.join(destin_folder, cleaned_file_name)
 Cancel_Path = os.path.join(BASE_DIR, 'data', 'support','cancelccy_list.csv')
 
 pivot_result_path = os.path.join(BASE_DIR, 'result', 'predictive','pivot_exchanged_.csv')
-pivot_to_share = "//fsn1/Company Share/FUT_FX/FX/Daily Report/Exchange Settlement Price/early_warn/temp/pivot_exchanged_.csv"
+pivot_to_share = dir_string.intermediate_dir + "early_warn/temp/pivot_exchanged_.csv"
 
 analysis_result_path = os.path.join(BASE_DIR, 'result', 'predictive','analysis_result.xlsx')
-analysis_to_share = "//fsn1/Company Share/FUT_FX/FX/Daily Report/Exchange Settlement Price/early_warn/temp/analysis_result.xlsx"
+analysis_to_share = dir_string.intermediate_dir + "early_warn/temp/analysis_result.xlsx"
 
 ccy_order_list = ['HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
 
@@ -42,7 +43,7 @@ review_path = os.path.join(BASE_DIR, 'result', 'review','transact_.csv')
 
 def latest_rate(folder_date):
     
-    target_folder = "//fsn1/Company Share/FUT_FX/FX/Daily Report/Exchange Settlement Price/" + folder_date[:4] +"/" + calendar.month_name[int(folder_date[4:6])][:3] + " " + folder_date[:4] + "/Records/"
+    target_folder = dir_string.intermediate_dir + folder_date[:4] +"/" + calendar.month_name[int(folder_date[4:6])][:3] + " " + folder_date[:4] + "/Records/"
 
     latest_file = max(os.path.join(root, filename)
                     for root, _, files in os.walk(target_folder)
