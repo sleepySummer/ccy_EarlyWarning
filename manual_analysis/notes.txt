@@ -1,8 +1,12 @@
-manual paste "cleaned FXDaily_Trans_xxx" ---> exchange_break
-
+1. prediction before ops input
 pivot_exchange_.csv + analysis_result.xlsx  ---> flow_predict.xlsm
 
-pivot_exchange_.csv + transact_.csv   	    ---> review_acc.xlsm
+2. etradepro format result after ops input
+manual paste "cleaned FXDaily_Trans_xxx" ---> exchange_break
+
+3.(TTLraw欠am -> main.py)    (FXDaily_Transact_yymmdd -> review.py)
+  pivot_exchange_.csv  +        transact_.csv   	         ---> review_acc.xlsm
+  (model predict)              (actual result)
 
 
 ##################################
