@@ -33,8 +33,8 @@ analysis_to_share = dir_string.intermediate_dir + "early_warn/temp/analysis_resu
 
 ccy_order_list = ['HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
 
-col_order_list = ['ClientID','HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
-# col_order_list = ['ClientID','ae_ID','HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
+#col_order_list = ['ClientID','HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
+col_order_list = ['ClientID','ae_ID','HKD','USD','CNY','EUR','GBP','AUD','NZD','CAD','CHF','SGD','JPY']
 
 other_ccy = ['EUR','GBP','AUD','NZD','CAD','CHF','SGD','YEN'] # for "FXDaily_Transactions_yymmdd", JPY->YEN
 

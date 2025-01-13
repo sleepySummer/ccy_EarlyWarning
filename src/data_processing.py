@@ -51,10 +51,10 @@ def preprocess_cancelccy(data):
 def preprocess_pivot(data):
 
     
-    data = data.pivot_table(index='ClientID', columns='CCY', values='On_Hand', aggfunc='sum')
+    #data = data.pivot_table(index='ClientID', columns='CCY', values='On_Hand', aggfunc='sum')
     # [USD CNH HKD JPY AUD EUR GBP CHF SGD CAD NZD] try add a complete list here
     # may try below if also want keep "ae_ID" column:
-    # pivot_data = data.pivot_table(index=['ClientID', 'ae_ID'], columns='CCY', values='On_Hand', aggfunc='sum').reset_index()
+    data = data.pivot_table(index=['ClientID', 'ae_ID'], columns='CCY', values='On_Hand', aggfunc='sum')#.reset_index()
 
     # Fill NaN values with 0 (in case a ClientID doesn't have a value for a specific currency)
     data = data.fillna(0)
